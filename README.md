@@ -1,12 +1,63 @@
-# React + Vite
+# 🧑‍💼 Job Portal Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack job posting platform built with **React 19**, **Tailwind CSS**, and **Supabase**.
 
-Currently, two official plugins are available:
+This platform allows:
+- **Admins** to post jobs, view applicants, and manage listings.
+- **Users** to register, apply for jobs, and manage their profile.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👥 Authentication
+- Sign up and login via Supabase Auth
+- Role-based access (admin/user)
+- Auth state persistence and protected routes
+
+### 🧑‍💼 Admin Dashboard
+- Create, update, delete job posts
+- View list of applicants per job
+- Edit jobs in a modal
+- View uploaded CVs and cover letters
+
+### 🙋‍♂️ User Dashboard
+- View profile info
+- See jobs you've applied to
+- Access submitted CVs and cover letters
+
+### 📃 Job Listings
+- Public job listing grid with description and "Apply Now" button
+- Clean layout with relative time display
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: React 19, Vite, Tailwind CSS
+- **Backend**: Supabase (Database + Auth + Storage)
+- **Storage**: Supabase File Storage (for CVs and Cover Letters)
+- **Routing**: React Router DOM
+
+---
+
+## 📂 Project Structure
+
+## 🧪 Running the Project Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/YOUR_USERNAME/job-portal.git
+cd job-portal
+
+# Install dependencies
+npm install
+
+# Create a .env file and add your Supabase credentials
+touch .env
+
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key
+
+# Start the app
+npm run dev
